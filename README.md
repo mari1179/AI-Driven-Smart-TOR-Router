@@ -151,7 +151,7 @@ ssh pi@raspberrypi.local
 ## Step 3 — Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-tor-router.git
+https://github.com/mari1179/AI-Driven-Smart-TOR-Router.git
 cd ai-tor-router
 ```
 
