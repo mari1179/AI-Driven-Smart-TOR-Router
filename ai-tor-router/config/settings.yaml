@@ -1,0 +1,39 @@
+# ── AI Tor Router Settings ─────────────────────────────────────────────────
+
+tor:
+  socks_port: 9050
+  control_port: 9051
+  control_password: ""          # Leave blank if using CookieAuthentication
+  circuit_rotation_interval: 600  # seconds between scheduled rotations
+  preferred_countries: []         # e.g. ["US", "DE", "NL"] — leave empty for any
+  blocked_countries: ["CN", "RU", "KP", "IR"]
+
+ai:
+  anomaly_threshold: 0.75         # 0-1: higher = less sensitive
+  model_retrain_interval: 3600    # retrain every N seconds
+  alert_on_anomaly: true
+
+hotspot:
+  ssid: "SecureNet"
+  password: "changeme123"         # CHANGE THIS!
+  channel: 6
+  interface: "wlan1"              # USB Wi-Fi adapter
+  upstream_interface: "eth0"      # Internet-connected interface
+  hotspot_ip: "192.168.4.1"
+  dhcp_range_start: "192.168.4.2"
+  dhcp_range_end: "192.168.4.20"
+
+monitor:
+  traffic_interface: "eth0"
+  sample_interval: 5              # seconds between traffic samples
+  health_check_interval: 30       # seconds between health checks
+
+dashboard:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+
+alerts:
+  telegram_token: ""              # Optional: your bot token
+  telegram_chat_id: ""            # Optional: your chat ID
+  email: ""                       # Optional: alert email address

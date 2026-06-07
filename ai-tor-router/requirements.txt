@@ -1,0 +1,12 @@
+flask
+stem
+psutil
+requests
+scikit-learn
+numpy
+pandas
+pyyaml
+pytest
+joblib
+scapy
+scipy
