@@ -325,7 +325,8 @@ Please open an issue before submitting major changes.
 
 MIT License © 2026
 
----
+Copyright (c) 2026 Mari Ganesh
+
 
 # ⚠️ Disclaimer
 
